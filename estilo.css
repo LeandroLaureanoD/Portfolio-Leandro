@@ -1,0 +1,262 @@
+/*
+* 
+* @author Leandro Laureano
+* @version 0.1
+*/
+
+/* ========================= layout ======================== */
+html, body, .capa {
+	position: relative;
+  	min-height: 100vh;
+
+}
+body{
+	/* background: url('img/keycloak-bg.png'); */
+				/* url('img/ruido.png'),
+				linear-gradient(50deg,#ff4169,#7c26f8);	 */
+	background-attachment: fixed;
+	font-family: emoji ,sans-serif;
+}
+
+/* -- Barra de navegação -- */
+.img-logo {
+	background: url('img/code-square.svg') no-repeat;
+	background-size: contain;
+	color: transparent;
+	margin-top: -23px;
+	font-size: 2.5rem;
+}
+
+nav.navbar-transparente {
+	position: absolute;
+    padding-bottom: 2.5rem;
+	background-color: #3556fb!important;
+}
+
+.divisor{
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin: 16px 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: white;
+	font-weight: bold;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: black;
+}
+
+.navbar-toggle {
+    background-color: #EE82EE;
+}
+.divisor{
+	width: 1px;
+	height: 16px;
+	background: white;
+}
+
+/* Informações nav */
+.nav-info {
+	min-height: 40rem;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+.info {
+	box-sizing: content-box;
+    max-width: 1160px;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.info-sub {
+	max-width: 580px;
+	display: table-cell;
+}
+.developer {
+	font-size: 3.5rem;
+    font-weight: bold;
+	border-right: 2px solid rgba(255,255,255, 0.75);
+	white-space: nowrap;
+	overflow: hidden;
+	
+}
+.welcome {
+	font-size: 2.5rem;
+}
+/* -- Letras Nav --*/
+.texto {
+	color: #FFFFFF;
+}
+/*Animação developer*/
+@keyframes dev-name {
+	from {
+		border-right-color: rgba(255,255,255, 0.75);
+	}to {
+		border-right-color: transparent;
+	}
+}
+.animation-name {
+	animation: dev-name 500ms steps(40) infinite normal, type-animation  4s steps(40) 1s normal both;
+}
+@keyframes type-animation {
+	from {
+		width: 0;
+	}to {
+		width: 14.5em;
+	}
+}
+/*End Animation developer*/
+
+/* Container/conteudo middle */
+.row {
+	margin-right: -15px;
+    margin-left: -15px;
+    padding-top: 20rem;
+    padding-bottom: 2.5rem;
+    background: black;
+    margin-top: 500px;
+    height: 400px;
+}
+.projetos {
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+/*Card*/
+.card {
+	width: 25rem;
+	border: 2px solid white;
+	border-radius: 10px; 
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%); 
+	float: left
+}
+.card-img-top {
+	width: 245px;
+    height: 180px;
+    border-radius: 10px; 
+}
+
+/* -- Botoes Nav --*/
+.btn-custom {
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius:500px;
+	-moz-border-radius: 500px;
+	padding: 10px 35px;
+	text-transform: uppercase;
+	transition: background 0.4s, color 0.4s;
+}
+.btn-branco {
+	border: 2px solid white; 
+}
+.btn-branco:hover {
+	background-color: white;
+	color: black; 
+}
+.btn-about {
+	padding: 20px 0 20px 0px;
+}
+
+/* -- Medias Sociais --*/
+.social-media {
+	margin-left: 55px;
+}
+.navbar-inverse .nav-info .info .info-sub .social-media>i:hover {
+	color: white;
+}
+
+/* -- Rodape --*/
+footer {
+  	position: absolute;
+  	bottom: 0;
+  	width: 100%;
+  	height: 2.5rem;
+}
+.container-info {
+	position: absolute;
+    bottom: 60px;
+    width: 100%;
+    background:#1b1e24;
+    height: 280px;
+}
+.container-author {
+	position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background:#1b1e24;
+    height: 60px;
+	border-top: 4px solid;
+    border-image: linear-gradient(45deg,#ff4ab3 8%,#7ff 24%,#fcd246 46%,#9ffe00 75%,#417efd 93%) 1;
+}
+.creator {
+	font-size: .75rem;
+    line-height: 1rem;
+    color: #9b9b9b;
+    letter-spacing: .27px;
+    font-weight: 400;
+	text-align: center;
+	line-height: 50px;
+}
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.contact {
+	font-size: .875rem;
+    line-height: 1rem;
+    color: #9da2ad;
+    letter-spacing: .27px;
+
+}
+.nav-contact {
+	padding-left: 120px;
+}
+i#icon-contact {
+	font-size: 1.3rem;
+	color: #FFFFFF;
+	
+}
+
+/*******************************/
+
+
+/* ========================= Tipografia ======================== */
+
+h1 {
+	font-size: 2.5rem;
+	color: #FFFFFF;
+}
+li {
+	list-style: none;
+}
+i {
+	font-size: 2.5rem;
+	padding: 0 10px 0 0;
+	cursor: pointer;
+}
+h3 {
+    font-size: .875rem;
+    line-height: 1.5rem;
+    color: #fff;
+    letter-spacing: .3px;
+    font-weight: 600;
+    position: relative;
+}
+a.contact:hover {
+	color: #FFFFFF;
+	text-decoration: blink;
+}
+
+
