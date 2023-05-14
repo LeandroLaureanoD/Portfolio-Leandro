@@ -195,7 +195,18 @@ body{
 	.project-pair {
 		margin-top: 0px!important; 
 	}
+	.project-odd h3 {
+		text-align: center!important;
+	}
+	.project-pair h3 {
+		text-align: center!important;
+	}
 } 
+@media (max-width: 400px) {
+	#project-test {
+		width: 350px;
+	}
+}
 
 .project-odd h3 {
     text-align: right;
@@ -287,6 +298,15 @@ body{
 		margin-left: 20px!important;
 	}
 	
+}
+
+/* Sobre */
+.container-about {
+	height: 1000px;
+}
+.sobre-img {
+	width: 250px;
+	height: 400px;
 }
 
 /* .card {
