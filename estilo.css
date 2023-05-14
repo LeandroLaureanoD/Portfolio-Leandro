@@ -40,16 +40,15 @@ body{
 }
 
 .navbar-inverse .navbar-nav>li>a {
-	color: white;
 	font-weight: bold;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
-	color: black;
+	color: #FFFFFF;
 }
 
 .navbar-toggle {
-    background-color: #EE82EE;
+    background-color: #222;
 }
 .divisor{
 	width: 1px;
@@ -58,6 +57,9 @@ body{
 }
 
 /* Informações nav */
+.navbar {
+	border-color: #222;
+}
 .nav-info {
 	min-height: 40rem;
     padding-top: 10rem;
@@ -65,6 +67,7 @@ body{
     background: transparent;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 5px 0px #e4e4e4;
+	background: #222;
 }
 .info {
 	box-sizing: content-box;
@@ -89,14 +92,26 @@ body{
 .welcome {
 	font-size: 2.5rem;
 }
+@media (max-width: 450px) {
+	h1 {
+		font-size: 1.8rem!important;
+	}
+	.developer {
+		font-size: 1.8rem;
+		
+	}
+	.welcome {
+		font-size: 1.8rem;
+	}
+}
 /* -- Letras Nav --*/
 .texto {
-	color: #000000;
+	color: #FFFFFF;
 }
 /*Animação developer*/
 @keyframes dev-name {
 	from {
-		border-right-color: rgb(12, 12, 12);
+		border-right-color: rgb(252, 252, 252);
 	}to {
 		border-right-color: transparent;
 	}
@@ -127,34 +142,100 @@ body{
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid;
 	margin-top: 15px;
 }
 
 /* Project */
-.project-unidade {
+.project-unit {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
-.project-impar h3 {
+@media (max-width: 1080px) {
+	#projetos-unit .paragrafo {
+		font-size: 1rem;
+	}
+	#project-test {
+		display: block;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 0 0 5px 0px #e4e4e4;
+		border-radius: 4px;
+		padding: 20px;
+	}
+	img {
+		max-width: 100%;
+	}
+	.projetos-list picture, .projeto-odd picture {
+		grid-column: initial;
+		grid-row: 3;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+} 
+@media (max-width: 450px) {
+	.project-odd .codeBtns, .project-unidade .codeBtns {
+		justify-self: center;
+	}
+	.shortly-img {
+		box-shadow: 0 0 5px 0px #e4e4e4;
+	}
+	.project-list {
+		display: flex;
+		gap: 40px;
+		padding-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		overflow-x: auto;				
+	}
+	#project-test {
+		width: 400px;
+	}
+	.project-pair {
+		margin-top: 0px!important; 
+	}
+} 
+
+.project-odd h3 {
     text-align: right;
+	margin: 0;
+}
+.project-pair {
+	margin-top: 50px;
+}
+.project-pair h3 {
+    text-align: left;
+	margin: 0;
 }
 .paragrafo {
     font-size: 1.25rem;
     color: #525252;
 }
-.project-impar p {
+.project-odd p {
     text-align: right;
 	grid-column: 1;
+	text-align: justify;
 }
-.project-impar picture {
+.project-pair p {
+    text-align: left;
+	grid-column: 2;
+	text-align: justify;
+}
+.project-odd picture {
     grid-column: 2;
     justify-self: right;
 }
-.project-lista picture {
+.project-pair picture {
+    grid-column: 1;
+    justify-self: left;
+}
+.project-list picture {
     grid-row: 1/5;
     max-width: 600px;
+	box-shadow: 0 0 5px 0px #e4e4e4;
+	border-radius: 2px;
+	border-radius: 10px;
 }
 .container .row .project a {
     color: black;
@@ -165,9 +246,49 @@ body{
 .linguagens {
 	align-self: flex-end;
     display: flex;
-    flex-wrap: wrap;
     gap: 0px 10px;
+    flex-direction: row-reverse;
 }
+.leng-pair {
+	flex-direction: revert;
+}
+.codeBtns {
+	display: flex;
+	flex-direction: row-reverse;
+}
+.btncode {
+	border: 1px solid;
+    border-radius: 30px;
+	width: 45px;
+    height: 45px;
+	margin-left: 5px;
+	text-transform: uppercase;
+	transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55), background-position 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 500ms linear;
+}
+.btncode:hover {
+	background-color: #222;
+	color: #FFFFFF; 
+	transform: scale(1.1);
+	background-position: -60px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);	
+}
+@media (max-width: 450px){
+	.info-sub {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.btn-group-lg>.btn, .btn-lg {
+		margin-left: 12px;
+		font-size: 1.5rem;
+	}
+	.social-media {
+		margin-left: 20px!important;
+	}
+	
+}
+
 /* .card {
 	width: 15%;
 	border: 2px solid #000000;
@@ -186,7 +307,7 @@ body{
 
 /* -- Botoes Nav --*/
 .btn-custom {
-	color: #000000;
+	color: #FFFFFF;
 	border-radius: 500px;
 	-webkit-border-radius:500px;
 	-moz-border-radius: 500px;
@@ -195,11 +316,11 @@ body{
 	transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55), background-position 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 500ms linear;
 }
 .btn-white {
-	border: 2px solid #000000; 
+	border: 2px solid #FFFFFF; 
 }
 .btn-custom:hover {
-	background-color: #1b1e24;
-	color: white; 
+	background-color: #FFFFFF;
+	color: #000000; 
 	transform: scale(1.1);
 	background-position: -60px;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);	
@@ -236,7 +357,6 @@ footer {
     bottom: 0px;
     width: 100%;
     background:#1b1e24;
-    height: 60px;
 	border-top: 4px solid;
     border-image: linear-gradient(45deg,#ff4ab3 8%,#7ff 24%,#fcd246 46%,#9ffe00 75%,#417efd 93%) 1;
 }
@@ -282,7 +402,18 @@ i#icon-contact {
 }
 .icon:hover {
 	transform: scale(1.1);
-	background-position: -60px;
+	background-position: -60px;	
+}
+.role {
+	visibility: collapse;
+}
+@media (max-width: 450px){
+	.role {
+		visibility: inherit;
+	}
+	.cursor-role {
+		cursor: text;
+	} 
 }
 /*******************************/
 
@@ -291,7 +422,7 @@ i#icon-contact {
 
 h1 {
 	font-size: 2.5rem;
-	color: #000000;
+	color: #FFFFFF;
 }
 h2 {
 	font-size: 30px;
@@ -329,7 +460,6 @@ ul {
     list-style: none;
 }
 img {
-    border: 1px solid;
     width: 503px;
     height: 309px;
 }
