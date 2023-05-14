@@ -9,7 +9,7 @@
 
   <title>Portfólio</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="icon" href="img/file-code-fill.svg">
+  <link rel="icon" href="./img/svg/file-code-fill.svg">
 
   <!-- Bootstrap -->
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -39,7 +39,7 @@
         </button>
 
         <a href="index.html" class="navbar-brand">
-          <span class="img-logo">Site</span>
+          <i class="bi bi-code-square"></i>
         </a>
 
       </div>
@@ -54,71 +54,77 @@
           <li><a href="">Projetos</a></li>
         </ul>
       </div>
-
-
     </div><!-- /container -->
-    <section class="nav-info">
-      <div class="info">
-        <div class="info-sub">
-          <h1>Olá,</h1>
-          <div class="texto">
-            <li class="developer animation-name">Sou Desenvolvedor Full Stack</li>
-            <li class="welcome">seja bem-vindo ao meu portfólio.</li>
-          </div>
-          <div class="btn-about">
-            <a href="" class="btn btn-custom btn-branco btn-lg">Mais sobre mim</a>
-          </div>
-          <div class="social-media">
-            <i class="bi bi-github"></i>
-            <i class="bi bi-linkedin"></i>
-            <i class="bi bi-whatsapp"></i>
-          </div>
-        </div>
-      </div><!-- info -->
-    </section><!-- /section -->
   </nav><!-- /nav -->
 
+  <section class="nav-info">
+    <div class="info">
+      <div class="info-sub">
+        <h1>Olá,</h1>
+        <div class="texto">
+          <li class="developer animation-name">Sou Desenvolvedor Full Stack</li>
+          <li class="welcome">seja bem-vindo ao meu portfólio.</li>
+        </div>
+        <div class="btn-about">
+          <a href="" class="btn btn-custom btn-white btn-lg">Mais sobre mim</a>
+        </div>
+        <div class="social-media">
+          <img class="icon" src="./img/svg/github.svg" alt="Navegar para o site" title="Navegar para o site">
+          <img class="icon" src="./img/svg/linkedin.svg" alt="Navegar para o perfil" title="Navegar para o perfil">
+          <img class="icon" src="./img/svg/whatsapp.svg" alt="Navegar para o contato" title="Navegar para o contato">
+        </div>
+      </div>
+    </div><!-- info developer-->
+  </section><!-- /section developer -->
+
+
   <div class="container" style="height: 1600px;">
-    
+    <h2>Projetos</h2>
     <div class="row">
-      <div class="projetos">
-        <h2>Projetos</h2>
-        <div class="card">
+      <div class="project">
+        <ul class="project-lista">
+          <li>
+            <div class="project-unidade project-impar">
+              <h3><a href="" target="_blank">Barber Shop</a></h3>
+
+              <p class="paragrafo">Página de Barbearia, produzida no curso de React js DevMedia. Nele pude fixar
+                conhecimentos de <strong>State Hook</strong> e eventos <strong>onClick</strong> aplicados nos modos de
+                cores Dark e Light do site.</p>
+
+              <picture>
+                <a class="telecall-img project-unidade-img" href="" target="_blank"><img src="./img/em-breve.png"
+                    alt="Página do project telecall"></a>
+              </picture>
+
+              <div class="linguagens">
+                <p>React JS</p>
+                <p>State Hook</p>
+                <p>SASS</p>
+              </div>
+
+              <div class="codeBtns">
+                <div class="intro-curriculo btncode">
+                  <a href="" target="_blank"><img class="icon" src="./img/svg/eye.svg"
+                      alt="Navegar para o site" title="Navegar para o site"></a>
+                </div>
+                <div class="intro-curriculo btncode">
+                  <a href="" target="_blank"><img class="icon" src="./img/svg/code-slash.svg"
+                      alt="Navegar para o site" title="Navegar para o código"></a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul><!-- end ul -->
+        <!-- <div class="card">
           <img src="img/em-breve.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <i class="bi bi-eye"></i>
+            <i class="bi bi-code-slash"></i>
           </div>
-        </div>
-        <div class="card">
-          <img src="img/em-breve.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/em-breve.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/em-breve.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
+        </div> -->
       </div>
     </div><!-- /row -->
   </div><!-- /container -->
