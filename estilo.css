@@ -142,14 +142,14 @@ body{
     gap: 0px 131px;
 	flex-direction: inherit!important;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1080px) {
 	.about {
 		padding: 20px;
 	}
 	#icon-about {
 		font-size: 1.25rem;
 	}
-	.paragrafo {
+	.paragraph {
 		font-size: 1.25rem!important;
 		color: #525252;
 	}
@@ -159,6 +159,11 @@ body{
 		gap: 0px 10px;
 		flex-direction: inherit!important;
 		font-size: 1.25rem;
+	}
+}
+@media (max-width: 1200px) {
+	#project-about .leng-about {
+		display: block;
 	}
 }
 
@@ -192,7 +197,7 @@ body{
 	margin-bottom: 60px;
 }
 @media (max-width: 1080px) {
-	#projetos-unit .paragrafo {
+	#projetos-unit .paragraph {
 		font-size: 1rem;
 	}
 	#project-test {
@@ -217,6 +222,10 @@ body{
 @media (max-width: 450px) {
 	.project-odd .codeBtns, .project-unidade .codeBtns {
 		justify-self: center;
+		justify-content: center;
+	}
+	.codeBtns.codeBtnsPair {
+		justify-content: center;
 	}
 	.shortly-img {
 		box-shadow: 0 0 5px 0px #e4e4e4;
@@ -241,6 +250,9 @@ body{
 	.project-pair h3 {
 		text-align: center!important;
 	}
+	.paragraph.languages {
+		justify-content: center;
+	}
 } 
 @media (max-width: 400px) {
 	#project-test {
@@ -259,7 +271,7 @@ body{
     text-align: left;
 	margin: 0;
 }
-.paragrafo {
+.paragraph {
     font-size: 1.50rem;
     color: #525252;
 }
@@ -294,24 +306,27 @@ body{
     font-size: 1.75rem;
     font-weight: bolder;	
 }
-.linguagens {
+.languages {
 	align-self: flex-end;
     display: flex;
     gap: 0px 10px;
-    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
 .leng-pair {
-	flex-direction: revert;
+	justify-content: flex-start;
 }
 .codeBtns {
 	display: flex;
 	flex-direction: row-reverse;
 }
+.codeBtnsPair {
+	flex-direction: row;
+}
 .btncode {
 	border: 1px solid;
     border-radius: 30px;
-	width: 45px;
-    height: 45px;
+	width: 40px;
+    height: 38px;
 	margin-left: 5px;
 	text-transform: uppercase;
 	transition: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55), background-position 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 500ms linear;
@@ -337,7 +352,6 @@ body{
 	.social-media {
 		margin-left: 20px!important;
 	}
-	
 }
 
 /* .card {
@@ -444,7 +458,8 @@ i#icon-contact {
 
 /*Icon*/
 .icon {
-	margin: 10px;
+	color: #000000;
+	margin: 7px;
     cursor: pointer;
     width: 25px;
     height: 25px;
@@ -513,6 +528,7 @@ h3 {
     letter-spacing: .3px;
     font-weight: 600;
     position: relative;
+	text-transform: uppercase;
 }
 h1, h1, h3, p, a {
     letter-spacing: .14rem;
