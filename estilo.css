@@ -494,6 +494,11 @@ i#icon-contact {
 	cursor: text;
 	font-size: 1.50rem;
 }
+/* Parcicles JS*/
+#particles-js {
+	width: 100%;
+	height: 100vh;
+}
 
 /* ========================= Tipografia ======================== */
 
