@@ -499,6 +499,11 @@ i#icon-contact {
 	width: 100%;
 	height: 100vh;
 }
+canvas.particles-js-canvas-el {
+	position: absolute;
+    top: 0px;
+	z-index: -1;
+}
 
 /* ========================= Tipografia ======================== */
 
@@ -507,7 +512,7 @@ h1 {
 	color: #FFFFFF;
 }
 h2 {
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: bold;
 	text-transform: uppercase;
 	margin: 0 auto;
