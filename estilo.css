@@ -5,10 +5,13 @@
 */
 
 /* ========================= layout ======================== */
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 90px;
+}
 html, body, .capa {
 	position: relative;
-  	min-height: 100vh;
-
+  	min-height: 100vh;	
 }
 body{
 	/* background: url('img/keycloak-bg.png'); */
@@ -139,6 +142,9 @@ body{
 /* Container/conteudo middle */
 
 /* About */
+#about-scroll {
+	padding-top: 40px;
+}
 #project-about {
 	display: block;
 }
@@ -182,6 +188,10 @@ body{
 }
 
 /* Project */
+#project-scroll {
+	background-color: #f6f6f6;
+    padding-top: 40px;
+}
 .row {
 	margin-right: -15px;
     margin-left: -15px;
@@ -420,10 +430,9 @@ body{
 
 /* -- Rodape --*/
 footer {
-  	position: absolute;
   	bottom: 0;
   	width: 100%;
-  	height: 2.5rem;
+  	height: 34rem;
 }
 .container-info {
 	position: absolute;
