@@ -7,7 +7,7 @@
 /* ========================= layout ======================== */
 html {
 	scroll-behavior: smooth;
-	scroll-padding-top: 90px;
+	scroll-padding-top: 50px;
 }
 html, body, .capa {
 	position: relative;
@@ -114,10 +114,12 @@ body{
 		font-size: 1.8rem;
 	}
 }
+
 /* -- Letras Nav --*/
 .texto {
 	color: #FFFFFF;
 }
+
 /*Animação developer*/
 @keyframes dev-name {
 	from {
@@ -367,7 +369,7 @@ body{
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);	
 	border-radius: 10px; 
 	float: left;
-	margin: 20px;
+	margin: 15px;
 }
 .card:hover {
 	transform: scale(1.1);
@@ -384,9 +386,8 @@ body{
 	flex-flow: nowrap;
 }
 .control {
-	position: absolute;
 	font-size: 20px;
-	line-height: 250px;
+	border-radius: 10px;
 	width: 40px;
 	text-align: center;
 	color: #FFFFFF;
@@ -394,12 +395,24 @@ body{
 	border: none;
 }
 .arrow-left {
-	left: 0;
 	background: linear-gradient(to left, transparent 0%, #222 200%);
 }
 .arrow-right {
-	right: 0;
 	background: linear-gradient(to right, transparent 0%, black 200%);
+}
+@media (max-width: 1080px) {
+	.card {
+		min-width: 150px;
+	}
+	.control {
+		position: absolute;
+	}
+	.arrow-left {
+		left: 0;
+	}
+	.arrow-right {
+		right: 0;
+	}
 }
 
 /* -- buttom Nav --*/
@@ -622,4 +635,3 @@ p {
 section {
 	padding-top: 40px;
 }
-

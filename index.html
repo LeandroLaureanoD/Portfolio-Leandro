@@ -26,10 +26,8 @@
 <body>
   <nav class="navbar navbar-fixed-top navbar-inverse navbar-transparente">
     <div class="container">
-
       <!-- header -->
       <div class="navbar-header">
-
         <!-- botao toggle -->
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
           <span class="sr-only">alternar navegação</span>
@@ -37,26 +35,23 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-
         <a href="index.html" class="navbar-brand">
           <i class="bi bi-code-square"></i>
         </a>
-
       </div>
-
       <!-- navbar -->
       <div class="collapse navbar-collapse" id="barra-navegacao">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="">Home</a></li>
-          <li><a href="">Formações</a></li>
+          <li><a href="#project-scroll">Projetos</a></li>
+          <li><a href="#certificacoes-scroll">Certificações</a></li>
           <li><a href="">Experiências</a></li>
           <li class="divisor" role="separator"></li>
-          <li><a href="#project-scroll">Projetos</a></li>
+          <li><a href="#contatos-scroll">Contatos</a></li>
         </ul>
       </div>
     </div><!-- /container -->
   </nav><!-- /nav -->
-
 
   <section id="particles-js" class="nav-info">
     <div class="info">
@@ -207,44 +202,50 @@
   <section id="certificacoes-scroll">
     <div class="container">
       <h2>Certifica<span class="color-after">ções</span></h2>
+
       <div class="certificate">
-        <button class="control arrow-left " aria-label="Previous image"> < </button>
-        <button class="control arrow-right " aria-label="Next image"> > </button>
+          <button class="control arrow-left" aria-label="Previous image"> < </button>
+          
         <div class="card">
-          <a href="www.google.com" target="_blank">
+          <a href="" target="_blank">
             <img src="img/cotemig.png" class="card-img-top" alt="..."></a>
           <h5 class="card-title">Full Stack Web</h5>
         </div>
         <div class="card">
-          <a href="www.google.com" target="_blank">
+          <a href="" target="_blank">
             <img src="img/alura.png" class="card-img-top" alt="..."></a>
           <h5 class="card-title">Mocks em Java</h5>
         </div>
         <div class="card">
-          <a href="www.google.com" target="_blank">
+          <a href="" target="_blank">
             <img src="img/alura.png" class="card-img-top" alt="..."></a>
           <h5 class="card-title">TDD e Java</h5>
         </div>
         <div class="card">
-          <a href="www.google.com" target="_blank">
+          <a href="" target="_blank">
             <img src="img/udemy.png" class="card-img-top" alt="..."></a>
           <h5 class="card-title">Dev Android</h5>
         </div>
         <div class="card">
-          <a href="www.google.com" target="_blank">
+          <a href="" target="_blank">
             <img src="img/udemy.png" class="card-img-top" alt="..."></a>
           <h5 class="card-title">Dev Web</h5>
         </div>
+        <div class="card">
+          <a href="" target="_blank">
+            <img src="img/softblue.png" class="card-img-top" alt="..."></a>
+          <h5 class="card-title">Sql completo</h5>
         </div>
+        <button class="control arrow-right" aria-label="Next image"> > </button>
       </div>
     </div><!-- /row -->
     </div><!-- /container certificates -->
   </section><!-- /section certificates -->
 
-  <footer>
+  <footer id="contatos-scroll">
     <div class="container-info">
       <nav class="footer-contact">
-        <h3>Contato</h3>
+        <h3>Contatos</h3>
         <div class="nav-contact">
           <div class="contact-one">
             <i id="icon-contact" class="bi bi-envelope-fill"></i>
