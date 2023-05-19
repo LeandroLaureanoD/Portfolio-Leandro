@@ -111,7 +111,34 @@ particlesJS(
     "retina_detect": true
   }
 );
+//projects
+const controlsProj = document.querySelectorAll(".control-proj");
+let currentItemProj = 0;
+const projUnit = document.querySelectorAll("#project-test");
+const maxItemsProj = projUnit.length;
 
+controlsProj.forEach((control) => {
+  control.addEventListener("click", () => {
+    const isLeft = control.classList.contains("arrow-left-proj");
+    if(isLeft) {
+      currentItemProj -= 1;
+    }else {
+      currentItemProj += 1;
+    }
+    if(currentItemProj >= maxItemsProj){
+      currentItemProj = 0;
+    }
+    if(currentItemProj < 0){
+      currentItemProj = maxItemsProj -1;
+    }
+    projUnit[currentItemProj].scrollIntoView({
+      inline: "center",
+      behavior: "smooth",
+    })
+    console.log('control cliked' , maxItemsProj, currentItemProj)
+  });
+});
+//Certificates
 const controls = document.querySelectorAll(".control");
 let currentItem = 0;
 const card = document.querySelectorAll(".card");

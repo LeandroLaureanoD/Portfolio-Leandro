@@ -362,10 +362,28 @@ body{
 		margin: 10px;
 	}
 }
+.control-proj {
+	position: absolute;
+	font-size: 20px;
+	border-radius: 10px;
+	width: 40px;
+	text-align: center;
+	color: #FFFFFF;
+	cursor: pointer;
+	border: none;
+}
+.arrow-left-proj {
+	left: 0;
+	background: linear-gradient(to left, transparent 0%, #222 200%);
+}
+.arrow-right-proj {
+	right: 0;
+	background: linear-gradient(to right, transparent 0%, #222 200%);
+}
 
 /* certificates */
 .card {
-	width: 15%;
+	min-width: 150px;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);	
 	border-radius: 10px; 
 	float: left;
@@ -384,8 +402,14 @@ body{
 	align-items: center;
 	overflow-x: auto;
 	flex-flow: nowrap;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+.certificate::-webkit-scrollbar {
+	display: none;
 }
 .control {
+	position: absolute;
 	font-size: 20px;
 	border-radius: 10px;
 	width: 40px;
@@ -395,24 +419,12 @@ body{
 	border: none;
 }
 .arrow-left {
+	left: 0;
 	background: linear-gradient(to left, transparent 0%, #222 200%);
 }
 .arrow-right {
-	background: linear-gradient(to right, transparent 0%, black 200%);
-}
-@media (max-width: 1080px) {
-	.card {
-		min-width: 150px;
-	}
-	.control {
-		position: absolute;
-	}
-	.arrow-left {
-		left: 0;
-	}
-	.arrow-right {
-		right: 0;
-	}
+	right: 0;
+	background: linear-gradient(to right, transparent 0%, #222 200%);
 }
 
 /* -- buttom Nav --*/
