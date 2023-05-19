@@ -361,6 +361,9 @@ body{
 	.info-sub>.btn-about {
 		margin: 10px;
 	}
+	.project-list .control-proj {
+		visibility: inherit;
+	}
 }
 .control-proj {
 	position: absolute;
