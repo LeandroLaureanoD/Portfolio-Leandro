@@ -119,8 +119,8 @@ const maxItemsProj = projUnit.length;
 
 controlsProj.forEach((control) => {
   control.addEventListener("click", () => {
-    const isLeft = control.classList.contains("arrow-left-proj");
-    if(isLeft) {
+    const isLeftProj = control.classList.contains("arrow-left-proj");
+    if(isLeftProj) {
       currentItemProj -= 1;
     }else {
       currentItemProj += 1;
@@ -131,11 +131,12 @@ controlsProj.forEach((control) => {
     if(currentItemProj < 0){
       currentItemProj = maxItemsProj -1;
     }
+   
     projUnit[currentItemProj].scrollIntoView({
       inline: "center",
       behavior: "smooth",
-    })
-    console.log('control cliked' , maxItemsProj, currentItemProj)
+    });
+    console.log('control cliked' , isLeftProj, maxItemsProj, currentItemProj)
   });
 });
 //Certificates
@@ -158,10 +159,12 @@ controls.forEach((control) => {
     if(currentItem < 0){
       currentItem = maxItems -1;
     }
+    card.forEach((item) => item.classList.remove("current-item"));
     card[currentItem].scrollIntoView({
       inline: "center",
       behavior: "smooth",
-    })
+    });
+    card[currentItem].classList.add("current-item");
     console.log('control cliked' , maxItems, currentItem)
   });
 });

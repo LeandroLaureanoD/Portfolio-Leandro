@@ -201,31 +201,30 @@ body{
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 	margin-bottom: 60px;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+.project-unit::-webkit-scrollbar {
+	display: none;
 }
 @media (max-width: 1080px) {
 	#projetos-unit .paragraph {
 		font-size: 1rem;
 	}
-	#project-test {
-		display: block;
-		justify-content: center;
-		align-items: center;
-		box-shadow: 0 0 5px 0px #e4e4e4;
+	#projects {
+		width: 400px;
 		border-radius: 4px;
-		padding: 20px;
+    	padding: 20px;
+    	border: 1px solid;
+    	grid-template-columns: 1fr;
 	}
 	img {
 		max-width: 100%;
 	}
-	.projetos-list picture, .projeto-odd picture {
+	.project .project-list picture {
 		grid-column: initial;
 		grid-row: 3;
-		justify-content: center;
-		margin-left: auto;
-		margin-right: auto;
 	}
-} 
-@media (max-width: 450px) {
 	.project-odd .codeBtns, .project-unidade .codeBtns {
 		justify-self: center;
 		justify-content: center;
@@ -234,7 +233,8 @@ body{
 		justify-content: center;
 	}
 	.shortly-img {
-		box-shadow: 0 0 5px 0px #e4e4e4;
+		/* box-shadow: 0 0 5px 0px #e4e4e4; */
+		
 	}
 	.project-list {
 		display: flex;
@@ -243,9 +243,6 @@ body{
 		margin-left: auto;
 		margin-right: auto;
 		overflow-x: auto;				
-	}
-	#project-test {
-		width: 400px;
 	}
 	.project-pair {
 		margin-top: 0px!important; 
@@ -259,9 +256,19 @@ body{
 	.paragraph.languages {
 		justify-content: center;
 	}
+	.project-list .project-pair p {
+		grid-column: 1;
+	}
 } 
+
+@media (max-width: 1000px) {
+	.project-list .control-proj {
+		visibility: inherit;
+	}
+}
+
 @media (max-width: 400px) {
-	#project-test {
+	#projects {
 		width: 350px;
 	}
 }
@@ -361,9 +368,6 @@ body{
 	.info-sub>.btn-about {
 		margin: 10px;
 	}
-	.project-list .control-proj {
-		visibility: inherit;
-	}
 }
 .control-proj {
 	position: absolute;
@@ -374,7 +378,10 @@ body{
 	color: #FFFFFF;
 	cursor: pointer;
 	border: none;
+	visibility: collapse;
+	margin-top: 270px;
 }
+
 .arrow-left-proj {
 	left: 0;
 	background: linear-gradient(to left, transparent 0%, #222 200%);
@@ -391,6 +398,8 @@ body{
 	border-radius: 10px; 
 	float: left;
 	margin: 15px;
+	opacity: 0.6;
+	transition: all 600ms ease-in-out;
 }
 .card:hover {
 	transform: scale(1.1);
@@ -398,6 +407,10 @@ body{
 .card-img-top {
 	width: 100%;
     height: 10%;
+	
+}
+.current-item {
+	opacity: 1;
 }
 .certificate {
 	text-align: center;
