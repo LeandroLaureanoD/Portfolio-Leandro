@@ -220,6 +220,10 @@ body{
 	}
 	img {
 		max-width: 100%;
+		
+	}
+	.shortly-img {
+		height: 250px;
 	}
 	.project .project-list picture {
 		grid-column: initial;
@@ -268,7 +272,10 @@ body{
 
 @media (max-width: 400px) {
 	#project-content {
-		width: 330px;
+		width: 300px;
+	}
+	.project-list .control-proj {
+		visibility: collapse;
 	}
 }
 
@@ -286,6 +293,9 @@ body{
 .paragraph {
     font-size: 1.50rem;
     color: #525252;
+}
+.paragraph-project {
+	height: 100px;
 }
 .project-odd p {
     text-align: right;
@@ -319,6 +329,7 @@ body{
     font-weight: bolder;	
 }
 .languages {
+	height: 30px;
 	align-self: flex-end;
     display: flex;
     gap: 0px 10px;
@@ -439,7 +450,14 @@ body{
 	right: 0;
 	background: linear-gradient(to right, transparent 0%, #222 200%);
 }
-
+@media (max-width: 450px){
+	.control {
+		visibility: collapse;
+	}
+	.card {
+		opacity: inherit;
+	}
+}
 /* -- buttom Nav --*/
 .btn-custom {
 	width: 224px;
@@ -545,17 +563,7 @@ i#icon-contact {
 	transform: scale(1.1);
 	background-position: -60px;	
 }
-.role {
-	visibility: collapse;
-}
-@media (max-width: 450px){
-	.role {
-		visibility: inherit;
-	}
-	.cursor-role {
-		cursor: text;
-	} 
-}
+
 #github:hover {
 	color: #000000;
 }
