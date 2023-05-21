@@ -114,7 +114,7 @@ particlesJS(
 //projects
 const controlsProj = document.querySelectorAll(".control-proj");
 let currentItemProj = 0;
-const projUnit = document.querySelectorAll("#project-test");
+const projUnit = document.querySelectorAll("#project-content");
 const maxItemsProj = projUnit.length;
 
 controlsProj.forEach((control) => {
@@ -133,7 +133,7 @@ controlsProj.forEach((control) => {
     }
    
     projUnit[currentItemProj].scrollIntoView({
-      inline: "center",
+      inline: "start",
       behavior: "smooth",
     });
     console.log('control cliked' , isLeftProj, maxItemsProj, currentItemProj)

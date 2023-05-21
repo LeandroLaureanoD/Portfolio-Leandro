@@ -211,7 +211,7 @@ body{
 	#projetos-unit .paragraph {
 		font-size: 1rem;
 	}
-	#projects {
+	#project-content {
 		width: 400px;
 		border-radius: 4px;
     	padding: 20px;
@@ -232,10 +232,6 @@ body{
 	.codeBtns.codeBtnsPair {
 		justify-content: center;
 	}
-	.shortly-img {
-		/* box-shadow: 0 0 5px 0px #e4e4e4; */
-		
-	}
 	.project-list {
 		display: flex;
 		gap: 40px;
@@ -243,6 +239,9 @@ body{
 		margin-left: auto;
 		margin-right: auto;
 		overflow-x: auto;				
+	}
+	.project-list::-webkit-scrollbar {
+		display: none;
 	}
 	.project-pair {
 		margin-top: 0px!important; 
@@ -268,8 +267,8 @@ body{
 }
 
 @media (max-width: 400px) {
-	#projects {
-		width: 350px;
+	#project-content {
+		width: 330px;
 	}
 }
 
@@ -418,8 +417,6 @@ body{
 	align-items: center;
 	overflow-x: auto;
 	flex-flow: nowrap;
-	-ms-overflow-style: none;
-	scrollbar-width: none;
 }
 .certificate::-webkit-scrollbar {
 	display: none;
