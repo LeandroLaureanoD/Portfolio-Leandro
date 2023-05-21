@@ -270,7 +270,7 @@ body{
 	}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
 	#project-content {
 		width: 300px;
 	}
