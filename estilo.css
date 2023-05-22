@@ -248,12 +248,10 @@ body{
 		display: none;
 	}
 	.project-pair {
+		margin-top: 25px;
 		margin-top: 0px!important; 
 	}
-	.project-odd h3 {
-		text-align: center!important;
-	}
-	.project-pair h3 {
+	.project-unit h3 {
 		text-align: center!important;
 	}
 	.paragraph.languages {
@@ -283,9 +281,6 @@ body{
     text-align: right;
 	margin: 0;
 }
-.project-pair {
-	margin-top: 25px;
-}
 .project-pair h3 {
     text-align: left;
 	margin: 0;
@@ -300,11 +295,13 @@ body{
 .project-odd p {
     text-align: right;
 	grid-column: 1;
-	text-align: justify;
 }
 .project-pair p {
     text-align: left;
 	grid-column: 2;
+	
+}
+.project-unit p {
 	text-align: justify;
 }
 .project-odd picture {
@@ -546,7 +543,7 @@ footer {
 }
 i#icon-contact {
 	font-size: 1.3rem;
-	color: #000000;
+	color: #FFFFFF;
 	
 }
 
@@ -628,9 +625,7 @@ h5 {
 	text-transform: uppercase;
     font-weight: bold;
 }
-h1, h1, h3, p, a {
-    letter-spacing: .14rem;
-}
+
 li {
 	list-style: none;
 }
