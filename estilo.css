@@ -194,8 +194,9 @@ body{
 	margin-right: -15px;
     margin-left: -15px;
     padding-bottom: 2.5rem;
-	padding-left: 15px;
+	padding: 0px 15px 15px 15px;
 }
+
 .project-unit {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -252,6 +253,7 @@ body{
 		margin-top: 0px!important; 
 	}
 	.project-unit h3 {
+		height: 50px;
 		text-align: center!important;
 	}
 	.paragraph.languages {
@@ -290,7 +292,7 @@ body{
     color: #525252;
 }
 .paragraph-project {
-	height: 100px;
+	height: 70px;
 }
 .project-odd p {
     text-align: right;
@@ -625,7 +627,6 @@ h5 {
 	text-transform: uppercase;
     font-weight: bold;
 }
-
 li {
 	list-style: none;
 }
