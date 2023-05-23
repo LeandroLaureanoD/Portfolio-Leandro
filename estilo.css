@@ -41,7 +41,9 @@ body{
 	background: white;
 	margin: 16px 10px;
 }
-
+nav#particles-js {
+	position: relative;
+}
 .navbar-inverse .navbar-nav>li>a {
 	font-weight: bold;
 	color: #FFFFFF;
@@ -64,30 +66,6 @@ body{
 .navbar {
 	border-color: #222;
 }
-.nav-info {
-	min-height: 40rem;
-    padding-top: 10rem;
-    padding-bottom: 4rem;
-    background: transparent;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 5px 0px #e4e4e4;
-	background: #222;
-	margin-bottom: 40px;
-}
-.info {
-	box-sizing: content-box;
-    max-width: 1160px;
-    padding-right: 16px;
-    padding-left: 16px;
-    text-align: center;
-    display: table;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
 .info-sub {
 	max-width: 580px;
 	display: table-cell;
@@ -102,7 +80,21 @@ body{
 .welcome {
 	font-size: 2.5rem;
 }
-@media (max-width: 450px) {
+@media (min-width: 450px) {
+	.info {
+		box-sizing: content-box;
+		max-width: 1160px;
+		text-align: center;
+		display: table;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+}
+@media (max-width: 550px) {
 	h1 {
 		font-size: 1.8rem!important;
 	}
@@ -156,7 +148,7 @@ body{
 }
 @media (max-width: 1080px) {
 	.about {
-		padding: 20px;
+		padding: 0px 20px 0px 20px;
 	}
 	#icon-about {
 		font-size: 1.25rem;
@@ -361,7 +353,7 @@ body{
 	background-position: -60px;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);	
 }
-@media (max-width: 450px){
+@media (max-width: 550px){
 	.info-sub {
 		display: flex;
 		flex-direction: column;
