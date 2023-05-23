@@ -69,8 +69,6 @@ nav#particles-js {
 .info {
 	box-sizing: content-box;
     max-width: 1160px;
-    padding-right: 16px;
-    padding-left: 16px;
     text-align: center;
     display: table;
     position: absolute;
