@@ -509,8 +509,6 @@ nav#particles-js {
 	}
 }
 
-
-
 /* -- buttom Nav --*/
 .btn-custom {
 	width: 224px;
@@ -569,7 +567,7 @@ footer {
     width: 100%;
     background:#1b1e24;
 	border-top: 4px solid;
-    border-image: linear-gradient(45deg,#ff4ab3 8%,#7ff 24%,#fcd246 46%,#9ffe00 75%,#417efd 93%) 1;
+    border-image: linear-gradient(135deg,#ffb241 0,#f34949 100%) 1;
 }
 .creator {
 	font-size: .75rem;
