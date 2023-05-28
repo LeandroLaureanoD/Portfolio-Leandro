@@ -260,6 +260,9 @@ nav#particles-js {
 }
 
 @media (max-width: 450px) {
+	.project {
+		margin-left: 15px;
+	}
 	#project-content {
 		width: 300px;
 		display: flow-root;
@@ -349,24 +352,6 @@ nav#particles-js {
 	background-position: -60px;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);	
 }
-@media (max-width: 550px){
-	.info-sub {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-	.btn-group-lg>.btn, .btn-lg {
-		margin-left: 12px;
-		font-size: 1.5rem;
-	}
-	.social-media {
-		margin-left: 20px!important;
-	}
-	.info-sub>.btn-about {
-		margin: 10px;
-	}
-}
 .control-proj {
 	position: absolute;
 	font-size: 20px;
@@ -388,6 +373,25 @@ nav#particles-js {
 	right: 0;
 	background: linear-gradient(to right, transparent 0%, #222 200%);
 }
+@media (max-width: 550px){
+	.info-sub {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.btn-group-lg>.btn, .btn-lg {
+		margin-left: 12px;
+		font-size: 1.5rem;
+	}
+	.social-media {
+		margin-left: 20px!important;
+	}
+	.info-sub>.btn-about {
+		margin: 10px;
+	}
+}
+
 
 /* certificates */
 .card {
@@ -420,8 +424,13 @@ nav#particles-js {
 .certificate::-webkit-scrollbar {
 	display: none;
 }
-.control {
+.btn-arrow {
 	position: absolute;
+    top: 87.7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.control {
 	font-size: 20px;
 	border-radius: 10px;
 	width: 40px;
@@ -431,13 +440,76 @@ nav#particles-js {
 	border: none;
 }
 .arrow-left {
-	left: 0;
+	
 	background: linear-gradient(to left, transparent 0%, #222 200%);
 }
 .arrow-right {
-	right: 0;
 	background: linear-gradient(to right, transparent 0%, #222 200%);
 }
+.container .scroll {
+	display: none;
+}
+@media (max-width: 1400px){
+	section {
+		padding-bottom: 0px;
+	}
+	.btn-arrow {
+		position: inherit!important;
+		transform: none;
+	}
+	.control {
+		position: absolute!important;
+		font-size: 20px;
+		border-radius: 10px;
+		width: 40px;
+		text-align: center;
+		color: #FFFFFF;
+		cursor: pointer;
+		border: none;
+	}
+
+	.arrow-left {
+		left: 0;
+		background: linear-gradient(to left, transparent 0%, #222 200%);
+	}
+	.arrow-right {
+		right: 0;
+		background: linear-gradient(to right, transparent 0%, #222 200%);
+	}
+}
+@media (max-width: 450px){
+	.container .scroll {
+		display: inline-block;
+	}
+	.control {
+		visibility: collapse;
+	}
+	.card {
+		opacity: inherit;
+	}
+	/* scroll to see more */
+	.scroll {
+		display: none;
+		margin: 15px;
+		font-weight: bold;
+	}
+	.fa.icone {
+		font-size: 46px;
+		color: #f97c46;
+		opacity: 1;
+		animation: anima 1500ms ease infinite;
+		position: relative;
+		float: right;
+	}
+	@keyframes anima {
+		to {
+			opacity: 0.1;
+			transform: scale(0.85) translate(20px);
+		}
+	}
+}
+
+
 
 /* -- buttom Nav --*/
 .btn-custom {
@@ -595,6 +667,17 @@ h2::after {
     margin-top: 13px;
     margin-bottom: 18px;
 }
+.scroll::after {
+	content: "";
+    display: block;
+    height: 2px;
+    width: 55px;
+    background: #f97c46;
+    background: linear-gradient(135deg,#ffb241 0,#f34949 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color',endColorstr='$color2',GradientType=1);
+    margin-top: 13px;
+    margin-bottom: 18px;
+}
 
 h3 {
     font-size: .875rem;
@@ -646,4 +729,5 @@ p {
 }
 section {
 	padding-top: 40px;
+	padding-bottom: 40px;
 }
