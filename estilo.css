@@ -241,10 +241,6 @@ nav#particles-js {
 	.project-list::-webkit-scrollbar {
 		display: none;
 	}
-	.project-pair {
-		margin-top: 25px;
-		margin-top: 0px!important; 
-	}
 	.project-unit h3 {
 		height: 50px;
 		text-align: center!important;
@@ -266,6 +262,7 @@ nav#particles-js {
 @media (max-width: 450px) {
 	#project-content {
 		width: 300px;
+		display: flow-root;
 	}
 	.project-list .control-proj {
 		visibility: collapse;
@@ -321,10 +318,9 @@ nav#particles-js {
     font-weight: bolder;	
 }
 .languages {
-	height: 30px;
 	align-self: flex-end;
     display: flex;
-    gap: 0px 10px;
+    gap: 10px;
     justify-content: flex-end;
 }
 .leng-pair {
