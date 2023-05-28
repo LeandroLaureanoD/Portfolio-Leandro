@@ -438,14 +438,7 @@ nav#particles-js {
 	right: 0;
 	background: linear-gradient(to right, transparent 0%, #222 200%);
 }
-@media (max-width: 450px){
-	.control {
-		visibility: collapse;
-	}
-	.card {
-		opacity: inherit;
-	}
-}
+
 /* -- buttom Nav --*/
 .btn-custom {
 	width: 224px;
