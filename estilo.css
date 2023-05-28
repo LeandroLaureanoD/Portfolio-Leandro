@@ -539,7 +539,7 @@ footer {
 i#icon-contact {
 	font-size: 1.3rem;
 	color: #FFFFFF;
-	
+	cursor: default;
 }
 
 /*Icon*/
@@ -636,6 +636,7 @@ a.contact:hover {
 	color: #FFFFFF;
 	text-decoration: blink;
 }
+
 ul {
     margin: 0px;
     padding: 0px;
