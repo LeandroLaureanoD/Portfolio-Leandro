@@ -180,7 +180,7 @@ nav#particles-js {
 }
 
 /* Project */
-#project-scroll {
+.project-color {
 	background-color: #f6f6f6;
 }
 .row {
@@ -592,6 +592,10 @@ footer {
     letter-spacing: .27px;
 
 }
+a.contact:hover {
+	color: #FFFFFF;
+	text-decoration: blink;
+}
 .nav-contact {
 	padding-left: 120px;
 }
@@ -702,10 +706,6 @@ i {
 i:hover {
 	color: #f97c46;
 }
-a.contact:hover {
-	color: #FFFFFF;
-	text-decoration: blink;
-}
 
 ul {
     margin: 0px;
@@ -727,5 +727,5 @@ p {
 }
 section {
 	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 }
