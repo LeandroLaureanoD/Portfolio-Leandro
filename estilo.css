@@ -19,6 +19,7 @@ body{
 				linear-gradient(50deg,#ff4169,#7c26f8);	 */
 	background-attachment: fixed;
 	font-family: emoji ,sans-serif;
+
 }
 
 /* -- Barra de navegação -- */
@@ -180,9 +181,6 @@ nav#particles-js {
 }
 
 /* Project */
-.project-color {
-	background-color: #f6f6f6;
-}
 .row {
 	margin-right: -15px;
     margin-left: -15px;
@@ -726,6 +724,6 @@ p {
     margin-inline-end: 0px;
 }
 section {
-	padding-top: 40px;
-	padding-bottom: 30px;
+	padding-top: 30px;
+
 }
