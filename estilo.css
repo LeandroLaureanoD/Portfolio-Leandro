@@ -427,7 +427,7 @@ nav#particles-js {
 }
 .btn-arrow {
 	position: absolute;
-    top: 87.9%;
+    top: 87%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -553,7 +553,7 @@ nav#particles-js {
 footer {
   	bottom: 0;
   	width: 100%;
-  	height: 34rem;
+  	height: 36rem;
 }
 .container-info {
 	position: absolute;
